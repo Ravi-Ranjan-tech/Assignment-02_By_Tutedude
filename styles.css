@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5845c 0%, #f07050 50%, #e86840 100%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-circle {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  top: -170px;
+  left: -150px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 52px;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 42px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 400;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.65;
+}
+
+.btn-dark {
+  background: #1d1d1d;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-dark:hover {
+  background: #333;
+}
+
+.btn-nav {
+  padding: 12px 30px;
+  font-size: 0.92rem;
+}
+
+.hero {
+  position: relative;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 52px 50px;
+}
+
+.hero-left {
+  width: 490px;
+  color: #fff;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.18;
+  margin-bottom: 18px;
+}
+
+.hero-left p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  opacity: 0.92;
+  max-width: 430px;
+  margin-bottom: 36px;
+  font-weight: 400;
+}
+
+.btn-cta {
+  padding: 17px 42px;
+  font-size: 1rem;
+}
+
+.diamond-border {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -200px;
+  top: 50%;
+  transform: translateY(-48%);
+  background: #fff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.18));
+  z-index: 4;
+}
+
+.diamond-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  clip-path: polygon(50% 4.5%, 95.5% 50%, 50% 95.5%, 4.5% 50%);
+}
+
+.tri-top {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  top: 0;
+  right: 0;
+  background: #d85530;
+  clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+  z-index: 3;
+}
+
+.tri-bottom {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  bottom: 0;
+  right: 0;
+  background: #d85530;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  z-index: 3;
+}
