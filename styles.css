@@ -13,7 +13,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #f5845c 0%, #f07050 50%, #e86840 100%);
+  background: linear-gradient(150deg, #f5885f 0%, #f07252 45%, #eb6640 100%);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -21,15 +21,16 @@ body {
 
 .bg-circle {
   position: absolute;
-  width: 580px;
-  height: 580px;
+  width: 520px;
+  height: 520px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.07);
-  top: -170px;
-  left: -150px;
+  top: -150px;
+  left: -100px;
   pointer-events: none;
   z-index: 0;
 }
+
 
 .navbar {
   position: relative;
@@ -37,26 +38,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 52px;
+  padding: 20px 44px;
 }
 
 .logo {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: #fff;
-  letter-spacing: 0.2px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 42px;
+  gap: 36px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 400;
   transition: opacity 0.2s;
 }
@@ -65,7 +65,7 @@ body {
   opacity: 0.65;
 }
 
-.btn-dark {
+.btn-pill {
   background: #1d1d1d;
   color: #fff;
   border: none;
@@ -76,14 +76,15 @@ body {
   transition: background 0.2s;
 }
 
-.btn-dark:hover {
+.btn-pill:hover {
   background: #333;
 }
 
 .btn-nav {
-  padding: 12px 30px;
-  font-size: 0.92rem;
+  padding: 11px 26px;
+  font-size: 0.88rem;
 }
+
 
 .hero {
   position: relative;
@@ -91,75 +92,84 @@ body {
   flex: 1;
   display: flex;
   align-items: center;
-  padding: 0 52px 50px;
+  padding: 0 44px 40px;
 }
 
 .hero-left {
-  width: 490px;
+  width: 440px;
   color: #fff;
 }
 
 .hero-left h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 1.18;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .hero-left p {
-  font-size: 0.9rem;
-  line-height: 1.8;
+  font-size: 0.87rem;
+  line-height: 1.82;
   opacity: 0.92;
-  max-width: 430px;
-  margin-bottom: 36px;
+  max-width: 390px;
+  margin-bottom: 30px;
   font-weight: 400;
 }
 
 .btn-cta {
-  padding: 17px 42px;
-  font-size: 1rem;
+  padding: 15px 38px;
+  font-size: 0.98rem;
 }
 
-.diamond-border {
+.tri-top-right {
   position: absolute;
-  width: 700px;
-  height: 700px;
-  right: -200px;
+  width: 168px;
+  height: 168px;
+  top: 0;
+  right: 0;
+  background: #d65230;
+  clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+  z-index: 6;
+}
+
+.diamond-white {
+  position: absolute;
+  width: 640px;
+  height: 640px;
   top: 50%;
-  transform: translateY(-48%);
-  background: #fff;
+  right: -165px;
+  transform: translateY(-50%);
+  background: #ffffff;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.18));
+  filter: drop-shadow(0 12px 36px rgba(0, 0, 0, 0.18));
   z-index: 4;
 }
 
-.diamond-img {
-  display: block;
+
+
+.diamond-photo {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 5%, 95% 50%, 50% 95%, 5% 50%);
+  overflow: hidden;
+}
+
+.diamond-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  clip-path: polygon(50% 4.5%, 95.5% 50%, 50% 95.5%, 4.5% 50%);
+  display: block;
 }
 
-.tri-top {
-  position: absolute;
-  width: 190px;
-  height: 190px;
-  top: 0;
-  right: 0;
-  background: #d85530;
-  clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
-  z-index: 3;
-}
 
-.tri-bottom {
+.tri-bottom-right {
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 112px;
+  height: 112px;
   bottom: 0;
   right: 0;
-  background: #d85530;
+  background: #d65230;
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-  z-index: 3;
+  z-index: 6;
 }
